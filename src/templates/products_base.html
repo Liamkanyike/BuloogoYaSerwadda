@@ -1,0 +1,105 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.8.8, https://mobirisethemes.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.8.8, mobirisethemes.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'assets/images/logo2.png' %}" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Blog - Resources</title>
+  <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons/mobirise-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/gallery/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+   
+  <link rel="stylesheet" href="{% static 'files/web/assets/mobirise-icons/mobirise-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'files/tether/tether.min.css' %}">
+  <link rel="stylesheet" href="{% static 'files/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'files/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'files/bootstrap/css/bootstrap-reboot.min.css' %}">
+  <link rel="stylesheet" href="{% static 'files/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'files/socicon/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'files/theme/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'files/gallery/style.css' %}">
+  <link rel="stylesheet" href="{% static 'files/mobirise/css/mbr-additional.css' %}" type="text/css">
+  
+</head>
+<body>
+
+
+
+
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }} mt-4">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+  {% block content %}
+  {% endblock content %}
+
+
+
+<section class="cid-rbb1M6ttDK" id="footer2-4" data-sortbtn="btn-primary">
+
+  
+    <div class="container-fluid">
+        <div class="row align-center justify-content-center align-items-center">
+            
+            <div class="col-sm-12 col-lg-4 mbr-text mbr-fonts-style mbr-light display-7">
+                © 2019 Dr Joseph Serwadda</div>
+            <div class="social-media col-sm-12 col-lg-4">
+                <ul>
+                    <li>
+                      <a class="icon-transition" href="#">
+                        <span class="mbr-iconfont socicon-facebook socicon"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="icon-transition" href="#">
+                        <span class="mbr-iconfont socicon-twitter socicon"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="icon-transition" href="#">
+                        <span class="mbr-iconfont socicon-linkedin socicon"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="icon-transition" href="#">
+                        <span class="mbr-iconfont socicon-youtube socicon"></span>
+                      </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="{% static 'assets/web/assets/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/popper/popper.min.js' %}"></script>
+  <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+  <script src="{% static 'assets/touchswipe/jquery.touch-swipe.min.js' %}"></script>
+  <script src="{% static 'assets/mobirise-shop/script.js' %}"></script>
+  <script src="{% static 'assets/dropdown/js/script.min.js' %}"></script>
+  <script src="{% static 'assets/theme/js/script.js' %}"></script>
+  <script src="{% static 'assets/gallery/player.min.js' %}"></script>
+  <script src="{% static 'assets/gallery/script.js' %}"></script>
+  
+  
+</body>
+</html>

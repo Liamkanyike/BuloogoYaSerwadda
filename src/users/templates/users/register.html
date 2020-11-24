@@ -1,0 +1,96 @@
+
+
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Join Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- MATERIAL DESIGN ICONIC FONT -->
+        <link rel="stylesheet" href="{% static 'reg/join/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="{% static 'reg/join/css/style.css' %}">
+    </head>
+
+    <body>
+
+        <div class="wrapper" style="background-image: url('{% static 'reg/join/images/bridge.jpeg' %}');">
+            <div class="inner">
+                <div class="image-holder">
+                    <img src="{% static 'reg/join/images/doc4.jpg' %}" alt="">
+                </div>
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <h3>Join the Family</h3>
+                    
+                    <div class="form-wrapper">
+                        {{form.username}}
+                        <i class="zmdi zmdi-account"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        {{form.email}}
+                        <i class="zmdi zmdi-email"></i>
+                    </div>
+                    
+                    <div class="form-wrapper">
+                        {{form.password1}}
+                        <i class="zmdi zmdi-lock"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        {{form.password2}}
+                        <i class="zmdi zmdi-lock"></i>
+                    </div>
+
+                    <div class="alert alert-{{ message.tags }} mt-4">
+                                {{form.errors}}
+                    </div>
+                        
+
+                     <br>
+                     <br>   
+                    <div class="form-checkbox">
+
+                    <label class="container"><p>
+                       
+                        <span class="checkmark"></span>By signing up, you agree to the <a href="#" class="text">Term of Service</a>
+                    </p>
+                    </label>
+                </div>
+                    <button>Register
+                        <i class="zmdi zmdi-arrow-right"></i>
+                    </button>
+                    <br>
+
+                    <label class="container"><div class="float-right">
+                        Already Have An Account? <a href="{% url 'login' %}" class="text">Log In</a>
+                    </div>
+                    </label>
+                </form>
+            </div>
+        </div>
+        
+    </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+
+
+    <script type="text/javascript">
+        var form_fields = document.getElementsByTagName('input')
+        form_fields[1].placeholder = 'Username..';
+        form_fields[2].placeholder = 'Email..';
+        form_fields[3].placeholder = 'Enter password...';
+        form_fields[4].placeholder = 'Re-enter password...';
+
+        for (var field in form_fields){
+            form_fields[field].className += 'form-control'
+        }
+
+    </script>
+
+</html>
+
+{% endblock content %}
